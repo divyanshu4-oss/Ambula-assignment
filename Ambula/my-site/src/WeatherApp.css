@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');  
+ *{  
+   box-sizing: border-box;  
+ }  
+ body{  
+   background-image: url("./images/sky.jpg"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;  
+   font-family: "Poppins", sans-serif;  
+   background-color: linear-gradiet(300deg, #757b87, #909d9d);  
+   display: flex;  
+   justify-content: center;  
+   align-items: center;  
+   min-height: 100vh;  
+   flex-direction: column;  
+ }  
+ .card{  
+  background: rgba(39, 37, 37, 0.5);  
+  color: white;  
+  padding: 1.5rem;  
+  border-radius: 1.875rem;   /*30px*/
+  /* width: 1em;   100% */
+  max-width: 26.25em; /*420px*/;  
+  margin: 1rem;  
+}  
+.searchh{
+  display: flex;  
+  align-items: center;  
+  justify-content: center;
+}
+.searchh button{  
+  margin: 1rem;  
+  border-radius: 0.5em;  
+  border: none;  
+  height: 2.5rem;  
+  width: 2.5rem;  
+  outline: none;  
+  background-color: rgba(92, 88, 88, 0.644);  
+  color: white;  
+}  
+.searchh button:hover{  
+  background-color: rgb(92, 88, 88);  
+  cursor: pointer;  
+  transition: 0.2s ease-in-out;  
+}  
+ input{  
+   padding: 1rem;  
+   border-radius: 1.563rem /*25px*/;  
+   border: none;  
+   background-color: #fff;  
+   font-family: inherit;  
+   box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.2);  
+   min-width: 18.75rem /*300px*/;  
+   font-size: 1rem;  
+ }  
+ input:focus{  
+   outline: none;  
+ }  
+ .weather{  
+   text-align: center;  
+   font-size: 2rem ;  
+ }  
+ .weather h2{  
+   margin-bottom: 0;  
+   display: flex;  
+   align-items: center;  
+ }  
+ /* .weather img{  
+   transform: scale(2);  
+ } */  
+ @media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="card"] {
+    width: 85%;
+
+  }
+  body{
+  background-image: url("./images/mobile.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  input{  
+    padding: 1rem;  
+    border-radius: 1rem /*25px*/;  
+    border: none;  
+    background-color: #fff;  
+    font-family: inherit;  
+    box-shadow: 0 0.25rem 0.625rem rgba(148, 147, 147, 0.2);  
+    min-width: 8.75rem /*300px*/;  
+    font-size: 1rem;  
+  }  
+}
